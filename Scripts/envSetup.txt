@@ -1,0 +1,20 @@
+#conda create env hatari
+conda create --name geo
+conda activate hatari
+conda install jupyterlab 
+#pip install scikit-learn scikit-image descartes
+conda install -c conda-forge pandas fiona
+conda install -c conda-forge fiona shapely rasterio pyproj pandas jupyterlab
+python -m jupyterlab
+conda env remove --name geoconda 
+
+
+
+conda create --name geo
+conda activate geo 
+conda install -c conda-forge fiona shapely rasterio pyproj pandas jupyterlab
+jupyterlab
+python -m jupyterlab
+conda deactivate
+conda env remove --name geo
+conda env listjupyte
